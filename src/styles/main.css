@@ -20,9 +20,6 @@ html {
 */
 
 .nav {
-  position: sticky;
-  top: 0;
-  background-color: teal;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -48,8 +45,8 @@ html {
   display: inline-block;
   padding: 1.3em;
   text-decoration: none;
-  color: white;
-  font-size: 15px;
+  color: black;
+  font-size: 12px;
 }
 
 .nav a:hover {
@@ -85,8 +82,7 @@ html {
 .header__menu {
   font-size: 32px;
   margin: 10px auto;
-  display: block;
-  width: 30px;
+  margin-left: 20px;
 }
 
 /*
@@ -125,31 +121,43 @@ html {
  * main
  */
 
-#main-content {
-  margin-top: 20px;
-  display: flex;
+main {
+  width: 80%;
+  margin: 20px auto;
 }
 
 main-content {
-  display: flex;
-  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+main h1 {
+  margin-top: 20px;
 }
 
 .card {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-
   margin: 10px;
 }
+
 .card img {
-  height: 150px;
+  width: 100%;
 }
 
 .card h1 {
   font-size: 20px;
 }
 
+.card h2 {
+  font-size: 16px;
+  color: gray;
+}
+
 .card-meta {
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 /*

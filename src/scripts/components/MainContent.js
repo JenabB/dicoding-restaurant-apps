@@ -1,10 +1,13 @@
 import restaurant from "../../DATA.json";
 const restaurantMenu = restaurant.restaurants
-console.log(restaurantMenu)
+
 const mainContent = document.createElement("main-content");
 mainContent.restaurants = restaurantMenu;
 
-// Append component maincontent ke dalam tag body
+function truncateString(str, num) {
+    return str;
+}
+
 const body = document.getElementById("main-content")
 body.appendChild(mainContent);
 
@@ -24,9 +27,10 @@ class MainContent extends HTMLElement {
             <div class="card">
             <img src=${restaurant.pictureId} alt=${restaurant.name} />
             <div class="card-meta">
-            <h1>${restaurant.name}</h1>
+                <h1>${restaurant.name}</h1>
                 <h2>${restaurant.city}</h2>
-                <p>${restaurant.description}</p>
+                <h3>${restaurant.rating}</h3>
+                <p class="truncate">${restaurant.description}</p>
             </div>   
             </div>
             `;
