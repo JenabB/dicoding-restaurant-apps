@@ -28,7 +28,7 @@ class MainContent extends HTMLElement {
                 <h1>${restaurant.name}</h1>
                 <h2>${restaurant.city}</h2>
                 <h3>${restaurant.rating}</h3>
-                <p class="truncate">${restaurant.description}</p>
+                <p class="truncate">${restaurant.description.slice(0, 100)}...</p>
             </div>   
             </div>
             `;
