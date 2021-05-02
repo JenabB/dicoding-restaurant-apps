@@ -49,6 +49,7 @@ html {
   padding: 1.3em;
   text-decoration: none;
   color: white;
+  font-size: 15px;
 }
 
 .nav a:hover {
@@ -118,6 +119,37 @@ html {
   margin-top: 16px;
   font-size: 18px;
   font-weight: 300;
+}
+
+/*
+ * main
+ */
+
+#main-content {
+  margin-top: 20px;
+  display: flex;
+}
+
+main-content {
+  display: flex;
+  overflow-y: auto;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  margin: 10px;
+}
+.card img {
+  height: 150px;
+}
+
+.card h1 {
+  font-size: 20px;
+}
+
+.card-meta {
+  padding: 20px;
 }
 
 /*
