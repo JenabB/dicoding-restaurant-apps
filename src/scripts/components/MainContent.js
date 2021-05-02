@@ -4,10 +4,8 @@ const restaurantMenu = restaurant.restaurants
 const mainContent = document.createElement("main-content");
 mainContent.restaurants = restaurantMenu;
 
-function truncateString(str, num) {
-    return str;
-}
 
+console.log(restaurantMenu[0].description.slice(0, 200))
 const body = document.getElementById("main-content")
 body.appendChild(mainContent);
 
