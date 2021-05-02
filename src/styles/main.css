@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+* Nav
+*
+*/
+
+.nav {
+  position: sticky;
+  top: 0;
+  background-color: teal;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 1.3em;
+  text-decoration: none;
+  color: white;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+/*
+* Header
+*
+*/
+
+.header {
+  min-height: 56px;
+  transition: min-height 0.3s;
+}
+
+.header__inner {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 4em;
+  margin: 0.5em 0.25em;
+  display: inline-block;
+  color: #212121;
+}
+
+.header__menu {
+  font-size: 32px;
+  margin: 10px auto;
+  display: block;
+  width: 30px;
+}
+
+/*
+* Jumbotron
+*/
+
+.hero {
+  align-items: center;
+  min-height: 380px;
+  width: 100%;
+  background-image: url("/src/public/images/heros/hero-image_2.jpg");
+  text-align: center;
+  background-position: center;
+  background-color: green;
+}
+
+.hero__inner {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hero__title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.hero__tagline {
+  color: #fff;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/*
+ * footer
+ */
+
+footer {
+  padding: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+footer ul {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+footer li {
+  margin: 0.3em 0;
+  font-size: 14px;
+}
