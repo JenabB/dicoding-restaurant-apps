@@ -5,14 +5,12 @@ class Hero extends HTMLElement {
 
   render() {
     this.innerHTML = `
-        <div class="hero">
-          <h1 class="hero__title">
-            Ziva Restaurant
-          </h1>
-          <p class="hero__tagline">
-            yare-yare
-          </p>
-          <a href="#main-content" class="btn">Yuk Cek!</a>
+        <div>
+       <div class="container">
+        <h1 class="hero__title">Ziva Restaurant</h1>
+          <p class="hero__tagline">various kinds of restaurant catalogs from various places</p>
+          <a href="#main-content" class="btn">Let's Check!</a>
+       </div>
         </div>
       `;
   }

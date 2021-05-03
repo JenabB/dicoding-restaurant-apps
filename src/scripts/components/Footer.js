@@ -8,7 +8,7 @@ class Footer extends HTMLElement {
     this.innerHTML = `
         <footer>
           <ul>
-            <li><span>Copyright © 2021 Ziva Store</span></li>
+            <li><span>Copyright © 2021 Ziva Restaurant</span></li>
             <li><span>Yogi Surya Pranata</span></li>
           </ul>
         </footer>
